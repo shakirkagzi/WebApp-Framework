@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NY Times" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="shakirkagzi"/>
+    <parameter name="key" value="b8368a1d-a174-4006-84ef-008b056dafa5"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="46"/>
+    <parameter name="url" value="http://www.nytimes.com"/>
+
+    <test name = "Ny Times Search">
+        <classes>
+            <class name="NYSearch.Search"/>
+        </classes>
+    </test>
+
+</suite>

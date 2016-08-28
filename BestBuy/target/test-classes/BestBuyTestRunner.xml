@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BestBuy Search" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="nahreen"/>
+    <parameter name="key" value=""/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="46"/>
+    <parameter name="url" value="http://www.bestbuy.com"/>
+
+    <test name = "BestBuy Search">
+        <classes>
+            <class name="item.Search.Search"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon E-Commerce" parallel="tests">
+
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="userName" value="shakirkagzi"/>
+    <parameter name="accessKey" value="b8368a1d-a174-4006-84ef-008b056dafa5"/>
+    <parameter name="os" value="Win8"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="50.0"/>
+    <parameter name="url" value="http://www.amazon.com"/>
+
+    <test name = "Amazon Search">
+        <classes>
+            <class name="home.page.Search"/>
+        </classes>
+    </test>
+
+</suite>
